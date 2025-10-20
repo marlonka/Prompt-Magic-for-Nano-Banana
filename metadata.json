@@ -1,6 +1,6 @@
 {
   "name": "Prompt Magic for Nano Banana",
-  "description": "Unleash your creativity with Prompt Magic for Nano Banana, an intelligent visual playground powered by the Gemini API. Go beyond basic prompts—simply speak your idea, type a description, or upload an image, and watch our 'Prompt Magic' engine transform your simple words into a rich, detailed prompt for breathtaking results. Generate stunning new visuals from scratch, or engage in a seamless, conversational workflow to edit and refine your images. Stuck for ideas? Explore our curated list of trending prompts to kickstart your next masterpiece. It's a voice-first, friction-free way to bring any vision to life.",
+  "description": "Go beyond basic prompts—simply speak your idea, type a description, or upload an image, and watch our 'Prompt Magic' engine transform your simple words into a rich, detailed prompt for breathtaking results. Generate stunning new visuals from scratch, or engage in a seamless, conversational workflow to edit and refine your images. Stuck for ideas? Explore our curated list of trending prompts to kickstart your next masterpiece. It's a voice-first, friction-free way to bring any vision to life.",
   "requestFramePermissions": [
     "microphone"
   ]

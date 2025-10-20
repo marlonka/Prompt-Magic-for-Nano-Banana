@@ -176,7 +176,12 @@ const VoiceInputScreen: React.FC<VoiceInputScreenProps> = ({
               )}
           </div>
           <footer className="text-center py-4">
-              <p className="text-xs text-text-secondary">{t('madeBy')}</p>
+              <p className="text-xs text-text-secondary">
+                {t('madeBy')}
+                <a href="https://www.marlonkaulich.de" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary transition-colors">
+                    Marlon Kaulich
+                </a>
+              </p>
               <button onClick={toggleLanguage} className="mt-2 text-xs text-text-secondary hover:text-text-primary transition-colors flex items-center gap-1.5 mx-auto">
                 <GlobeIcon className="w-4 h-4" />
                 <span>{language === 'en' ? t('switchToGerman') : t('switchToEnglish')}</span>

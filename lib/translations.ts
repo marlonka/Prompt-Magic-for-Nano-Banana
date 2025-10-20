@@ -23,7 +23,7 @@ const translations = {
     submitPrompt: "Submit prompt",
     micPermissionDenied: "Microphone permission denied. Please allow microphone access in your browser settings.",
     micCouldNotStart: "Could not start recording. Please ensure a microphone is connected.",
-    madeBy: "Made by Marlon Kaulich",
+    madeBy: "Made by ",
     switchToGerman: "Deutsch",
     switchToEnglish: "English",
 
@@ -140,7 +140,7 @@ const translations = {
     submitPrompt: "Prompt senden",
     micPermissionDenied: "Mikrofonzugriff verweigert. Bitte erlaube den Mikrofonzugriff in deinen Browsereinstellungen.",
     micCouldNotStart: "Aufnahme konnte nicht gestartet werden. Bitte stelle sicher, dass ein Mikrofon angeschlossen ist.",
-    madeBy: "Erstellt von Marlon Kaulich",
+    madeBy: "Erstellt von ",
     switchToGerman: "Deutsch",
     switchToEnglish: "English",
 
