@@ -1,20 +1,48 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <img alt="Prompt Magic for Nano Banana" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" width="1200" height="475" />
 </div>
 
-# Run and deploy your AI Studio app
+# Prompt Magic for Nano Banana
 
-This contains everything you need to run your app locally.
+"Prompt Magic for Nano Banana" is a web application that allows you to generate images from voice or text prompts. It uses the Gemini API to understand your voice, enhance your prompts, and generate high-quality images. You can also upload your own images and edit them with voice or text prompts.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1547Gz-6GFbOs_C8Iq1rpLSsG82hhlddG
+![image](https://github.com/user-attachments/assets/635a65a2-3482-4113-b58a-36366fdf35b4)
+
+## How to Use
+
+1. **Speak or type your idea:**
+   - Click the microphone icon to speak your idea.
+   - Or, type your idea in the text box.
+2. **Generate an image:**
+   - Click the "Generate" button to create a new image.
+3. **View and edit the image:**
+   - The generated image will be displayed on the screen.
+   - You can then edit the image by speaking or typing a new prompt.
+4. **Start over:**
+   - Click the "Reset" button to start over.
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+**Prerequisites:** Node.js
 
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+2. **Set up your environment variables:**
+   - Create a new file named `.env.local` in the root of the project.
+   - Add the following line to the file:
+     ```
+     GEMINI_API_KEY=YOUR_API_KEY
+     ```
+   - Replace `YOUR_API_KEY` with your Gemini API key.
+3. **Run the app:**
+   ```bash
+   npm run dev
+   ```
+4. **Open the app in your browser:**
+   - Go to `http://localhost:3000` to view the app.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Deploy
+
+For information on how to deploy your app, see the [deployment documentation](https://ai.google.dev/docs/ai-studio-deploys).
