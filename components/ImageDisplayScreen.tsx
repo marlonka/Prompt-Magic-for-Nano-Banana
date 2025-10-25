@@ -22,20 +22,32 @@ interface ImageDisplayScreenProps {
 }
 
 const ImageDisplayScreen: React.FC<ImageDisplayScreenProps> = ({ data, onEditSubmit, onReset }) => {
+  // State for the text prompt
   const [textPrompt, setTextPrompt] = useState('');
+  // Audio recorder hook
   const { isRecording, error, startRecording, stopRecording, cancelRecording } = useAudioRecorder();
+  // State for the base image modal
   const [isBaseImageModalOpen, setIsBaseImageModalOpen] = useState(false);
+  // State for the main image modal
   const [isMainImageModalOpen, setIsMainImageModalOpen] = useState(false);
+  // Ref for the prompt magic scrollable div
   const promptMagicRef = useRef<HTMLDivElement>(null);
+  // Ref to track if the user has scrolled
   const userHasScrolled = useRef(false);
+  // Translations hook
   const { t } = useTranslations();
 
+  // State for the edit image files
   const [editImageFiles, setEditImageFiles] = useState<File[]>([]);
+  // State for the edit image URLs
   const [editImageUrls, setEditImageUrls] = useState<string[]>([]);
+  // Ref for the edit file input
   const editFileInputRef = useRef<HTMLInputElement>(null);
   
+  // State for the advanced edit section
   const [showAdvancedEdit, setShowAdvancedEdit] = useState(false);
 
+  // Effect to create object URLs for the edit image files
   useEffect(() => {
     const urls = editImageFiles.map(file => URL.createObjectURL(file));
     setEditImageUrls(urls);
